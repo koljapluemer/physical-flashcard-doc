@@ -19,6 +19,7 @@
 - User color sparingly, and only for primary/important elements or those that must use color to communicate (e.g. a warning)
 - Make sure any given layout works well on mobile and desktop!
 - use primary buttons (`btn-primary`) ONLY!!!!!!!!!! for truly primary actions, of which there are very few
+- use [toasts](src/stores/toast.ts) for communication with the user (error states etc.)
 - Use this pattern for form inputs:
 
 ```
@@ -35,3 +36,5 @@
 
 - KEEP. IT. SIMPLE.
 - This is an INTERNAL EXPERT app. Avoid promoting features, marketing speak, waffling and yapping about how features work or why there are awesome. Users know what they are doing.
+
+- Always run `npm run build` and `npm run lint` for validation.
