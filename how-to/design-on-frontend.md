@@ -1,9 +1,9 @@
 # Frontend Design Guidelines
 
 - Use Tailwind and Daisy.UI components
+- use lucide (installed `lucide-vue-next`) for any and all icons
 - Understand [App.vue](src/app/App.vue): Note that the router view is already wrapped with a container and a flex layout. Do not wrap a page into another container or flex layout for no reason.
 - In general (barring special cases where it makes no sense), every page should have a `h1` on top
-- Do not add classes to headings
 - Use wrapping components and especially cards sparingly, and only when needed.
 - When using a card, give it classes `card` and `shadow`. Nothing else. No variation unless called for.
 - If a card must have an hover effect because it's clickable, give it `transition-hover` and `hover:shadow-md`
