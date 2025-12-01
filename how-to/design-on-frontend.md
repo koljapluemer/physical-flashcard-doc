@@ -18,7 +18,7 @@
 - For recurring complex styles, use `@apply` in `App.vue`.
 - User color sparingly, and only for primary/important elements or those that must use color to communicate (e.g. a warning)
 - Make sure any given layout works well on mobile and desktop!
-
+- use primary buttons (`btn-primary`) ONLY!!!!!!!!!! for truly primary actions, of which there are very few
 - Use this pattern for form inputs:
 
 ```
@@ -34,3 +34,4 @@
 ```
 
 - KEEP. IT. SIMPLE.
+- This is an INTERNAL EXPERT app. Avoid promoting features, marketing speak, waffling and yapping about how features work or why there are awesome. Users know what they are doing.
