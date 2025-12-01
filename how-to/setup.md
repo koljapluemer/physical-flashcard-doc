@@ -1,0 +1,1 @@
+- go to each of the repos mentioned in the [README](README.md) and do the described setup.
