@@ -42,7 +42,7 @@ Tokens are persistent and tied to the user; rotate them by deleting/recreating v
 | Method | Description                 | Notes                                    |
 |--------|-----------------------------|------------------------------------------|
 | GET    | List collections            | Returns an array of collection objects   |
-| POST   | Create a collection         | `title` (required), `description` (optional), styling fields (optional) |
+| POST   | Create a collection         | `title`, `width_mm`, `height_mm`, `font_family` (required), `description` and styling fields (optional) |
 
 `/api/collections/{id}/`
 
@@ -60,6 +60,9 @@ Collection representation:
   "id": 1,
   "title": "Biology 101",
   "description": "Introductory course",
+  "width_mm": "85.60",
+  "height_mm": "53.98",
+  "font_family": "Arial",
   "header_color": "#100e75",
   "background_color": "#f0f0f0",
   "font_color": "#171717",
@@ -69,6 +72,12 @@ Collection representation:
   "updated_at": "2025-01-02T09:30:00Z"
 }
 ```
+
+**Required Fields:**
+- `title` - Title of the collection (required)
+- `width_mm` - Width in millimeters (required, decimal, default: `85.60`)
+- `height_mm` - Height in millimeters (required, decimal, default: `53.98`)
+- `font_family` - Font family name (required, default: `Arial`)
 
 **Styling Fields:**
 - `header_color` - Hex color for collection header background (default: `#100e75`)
