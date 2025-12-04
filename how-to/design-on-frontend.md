@@ -1,9 +1,9 @@
 # Frontend Design Guidelines
 
 - Use Tailwind and Daisy.UI components
+- use lucide (installed `lucide-vue-next`) for any and all icons
 - Understand [App.vue](src/app/App.vue): Note that the router view is already wrapped with a container and a flex layout. Do not wrap a page into another container or flex layout for no reason.
 - In general (barring special cases where it makes no sense), every page should have a `h1` on top
-- Do not add classes to headings
 - Use wrapping components and especially cards sparingly, and only when needed.
 - When using a card, give it classes `card` and `shadow`. Nothing else. No variation unless called for.
 - If a card must have an hover effect because it's clickable, give it `transition-hover` and `hover:shadow-md`
@@ -18,7 +18,8 @@
 - For recurring complex styles, use `@apply` in `App.vue`.
 - User color sparingly, and only for primary/important elements or those that must use color to communicate (e.g. a warning)
 - Make sure any given layout works well on mobile and desktop!
-
+- use primary buttons (`btn-primary`) ONLY!!!!!!!!!! for truly primary actions, of which there are very few
+- use [toasts](src/stores/toast.ts) for communication with the user (error states etc.)
 - Use this pattern for form inputs:
 
 ```
@@ -34,3 +35,6 @@
 ```
 
 - KEEP. IT. SIMPLE.
+- This is an INTERNAL EXPERT app. Avoid promoting features, marketing speak, waffling and yapping about how features work or why there are awesome. Users know what they are doing.
+
+- Always run `npm run build` and `npm run lint` for validation.
