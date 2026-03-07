@@ -1,3 +1,7 @@
+> [!WARNING]
+> *Archival Notice*: reduced flow to monorepo
+
+
 Documents the following interdependent repos:
 
 1. [physical-flashcard-manager](github.com/koljapluemer/physical-flashcard-manager) *(vue frontend)*
